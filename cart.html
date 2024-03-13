@@ -5,58 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Cart</title>
 </head>
 <body>
-    <header>
-        <button>back</button>
-        <a href="index.html">back</a>
-
-        <h1>Cart</h1>
-
-        <button>more</button>
-
-    <!-- ARROWS -->
-    <span class="material-symbols-outlined">arrow_back_ios_new</span>
-    <span class="material-symbols-outlined">chevron_left</span>
-    <span class="material-symbols-outlined">arrow_forward_ios </span>
-    <span class="material-symbols-outlined">chevron_right</span>
-    <span class="material-symbols-outlined">expand_more</span>
-
-    </header>
-    <main>
-        <div class="cart-list">   
-            <div class="cart-card">
-                <div class="cart-icon">placeholder</div>
-                <p>Chicken Burger</p>
-                <span class="material-symbols-outlined">close</span>
-                <span class="material-symbols-outlined">add</span>2<span class="material-symbols-outlined">remove</span>
-                <p>$29.99</p>
+    <div class="container">
+        <header>
+            <a href="index.html">back</a>
+            <span class="material-symbols-outlined">arrow_back_ios_new</span>
+            <h1>Cart</h1>
+            <span class="material-symbols-outlined">more_vert</span>
+        </header>
+        
+        <main>
+            <div class="cart-list">   
+                <div class="cart-card">
+                    <div class="cart-icon">placeholder</div>
+                    <p>Chicken Burger</p>
+                    <span class="material-symbols-outlined">close</span>
+                    <span class="material-symbols-outlined">add</span>2<span class="material-symbols-outlined">remove</span>
+                    <p>$29.99</p>
+                </div>
+    
+                <div class="cart-card">
+                    <div class="cart-icon">placeholder</div>
+                    <p>Chicken Burger</p>
+                    <span class="material-symbols-outlined">close</span>
+                    <span class="material-symbols-outlined">add</span>2<span class="material-symbols-outlined">remove</span>
+                    <p>$29.99</p>
+                </div>
             </div>
-
-            <div class="cart-card">
-                <div class="cart-icon">placeholder</div>
-                <p>Chicken Burger</p>
-                <span class="material-symbols-outlined">close</span>
-                <span class="material-symbols-outlined">add</span>2<span class="material-symbols-outlined">remove</span>
-                <p>$29.99</p>
+    
+            <button>Add Coupons<span class="material-symbols-outlined">
+                arrow_right_alt
+                </span></button>
+    
+            <div class="cart-total">
+                <p>29.99</p>
+                <p>5.99</p>
+                <p>35.99</p>
             </div>
-        </div>
-
-        <button>Add Coupons<span class="material-symbols-outlined">
-            arrow_right_alt
-            </span></button>
-
-        <div class="cart-total">
-            <p>29.99</p>
-            <p>5.99</p>
-            <p>35.99</p>
-        </div>
-
-        <button>Procced To Payment Method</button>
-    </main>
+    
+            <button>Procced To Payment Method</button>
+        </main>
+    </div>
 </body>
 </html>

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -28,7 +33,7 @@
             </div>
         </header>
     
-        <main>
+        <main class="main">
             <nav class="app-nav">
                 <div>
                     <span class="material-symbols-outlined">home</span>
@@ -59,39 +64,51 @@
             <nav class="page-nav">
                 <h1>Hey!</h1>
                 <h2>Let's get your order</h2>
-                <span class="material-symbols-outlined">search</span>
-                <input type="text" name="" id="" placeholder="Search Our Delicious Burgers">
+                <div>
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" name="" id="" placeholder="Search Our Delicious Burgers">
+                </div>
             </nav>
     
             <section class="cards1">
                 <div class="card1">
                     <div class="card1-icon">placeholder</div>
                     <p class="card1-food">Food</p>
-                    <button class="card1-button"></button>
+                    <span class="material-symbols-outlined">chevron_right</span>
                 </div>
     
                 <div class="card1">
                     <div class="card1-icon">placeholder</div>
                     <p class="card1-food">Food</p>
-                    <button class="card1-button"></button>
+                    <span class="material-symbols-outlined">chevron_right</span>
                 </div>
     
                 <div class="card1">
                     <div class="card1-icon">placeholder</div>
                     <p class="card1-food">Food</p>
-                    <button class="card1-button"></button>
+                    <span class="material-symbols-outlined">chevron_right</span>
                 </div>
             </section>
             
             <section>
-                <h2>Popular</h2>
-                <p>View All</p>
+                <div class="popular">
+                    <h2>Popular</h2>
+                    <p>View All</p>
+                </div>
                 
                 <div class="card2">
-                    <div class="card2-icon"></div>
-                    <p>Food Name (Crispy Chicken Chipotle Burger) </p>
-                    <p class="price">$29.99</p>
-                    <p>Food Type (Chicken Burger)</p>
+                    <div class="redbox">
+                        <div class="card2-icon">placeholder</div>
+                    </div>
+                    <div class="card2-bottom">
+                        <div>
+                            <p>Crispy Chicken Chipotle Burger</p>
+                            <p>Chicken Burger</p>
+                        </div>
+                        <div>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
                 </div>
     
             </section>  
