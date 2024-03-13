@@ -2,10 +2,40 @@ body {
     font-family: "Poppins";
 }
 
-main {
-    margin-bottom: 80px;
+p {
+    font-size: 16px;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h4 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+main {
+    margin: 80px 0px;
+}
+
+.container {
+    width: auto;
+    margin: 0% 1%;
+}
 /* ------------------------------------------------------- */
 
 header {
@@ -46,13 +76,13 @@ header div {
     flex: auto;
 
     position: fixed;
-    /* overflow: hidden; */
+    overflow: hidden;
     bottom: 0;
    
     color: gray;
     height: 80px;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -61,13 +91,17 @@ header div {
     flex-direction: column;
     align-items: center;
   
-    background-color: white;
     padding: 10px;
     width: 100%;
 }
 
 .app-nav div:nth-child(1) {
     color: #C8161D;
+}
+
+.app-nav a {
+    color: gray;
+    padding: 16px;
 }
     
 /* ------------------------------------------------------- */
@@ -85,7 +119,15 @@ header div {
 
     width: 100%;
     margin-bottom: 25px;
+    padding: 10px;
+    color: lightgray;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.page-nav input {
+    width: 100%;
+    border: none;
 }
 
 /* ------------------------------------------------------- */
@@ -104,7 +146,7 @@ header div {
     padding: 10px;
     height: 200px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -113,11 +155,26 @@ header div {
     color: white;
 }
 
-.card1:nth-child(1) {
+/* .card1:nth-child(1) {
     background-color: #C8161D;
+    color: white;
+
+}.card1:nth-child(1) span {
+    background-color: white;
+    color: #C8161D;
+} */
+
+.card1 span {
+    background-color: black;
+    border-radius: 50%;
     color: white;
 }
 
+.card1:hover span {
+    background-color: white;
+    border-radius: 50%;
+    color: #C8161D;
+}
 /* ------------------------------------------------------- */
 
 .popular {
@@ -126,8 +183,12 @@ header div {
     justify-content: space-between;
 }
 
-.popular p {
+.viewall {
     color: #C8161D;
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
 }
 
 /* ------------------------------------------------------- */
@@ -156,7 +217,15 @@ header div {
 .card2-bottom {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
+
+    color: grey;
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 600;
+    color: black;
 }
 
 /* CART------------------------------------------------------- */
@@ -193,7 +262,7 @@ header div {
 .cart-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 
     padding: 10px;
     height: 200px;
@@ -209,6 +278,7 @@ header div {
     align-items: center;
 
     border: solid lightgray 1px;
+    width: 100px;
 }
 
 .cart-amount span {
@@ -253,4 +323,80 @@ header div {
 
 .redbackground {
     background-color: #C8161D;
+}
+
+.rate-page {
+    text-decoration-color: white;
+}
+
+.rate-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate-header div {
+background-color: white;
+}
+
+/* ------------------------------------------------------- */
+
+.card3-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.card3 span{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* ------------------------------------------------------- */
+
+.card3-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 75%;
+}
+
+.card3-top-last {
+    color: white;
+}
+
+/* ------------------------------------------------------- */
+
+.card3-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.card3-bottom p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0px 15px;
 }
