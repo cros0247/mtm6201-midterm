@@ -18,43 +18,66 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <a href="index.html">back</a>
-            <span class="material-symbols-outlined">arrow_back_ios_new</span>
+        <header class="cart-header">
+            <div class="back-button">
+                <a href="index.html">back</a>
+                <span class="material-symbols-outlined">arrow_back_ios_new</span>
+            </div>
             <h1>Cart</h1>
-            <span class="material-symbols-outlined">more_vert</span>
+            <div class="more-button">
+                <span class="material-symbols-outlined">more_vert</span>
+            </div>
         </header>
-        
+
         <main>
             <div class="cart-list">   
                 <div class="cart-card">
                     <div class="cart-icon">placeholder</div>
-                    <p>Chicken Burger</p>
                     <span class="material-symbols-outlined">close</span>
-                    <span class="material-symbols-outlined">add</span>2<span class="material-symbols-outlined">remove</span>
+                    <p>Chicken Burger</p>
+                    <div class="cart-amount">
+                        <span class="material-symbols-outlined">remove</span>
+                        2
+                        <span class="material-symbols-outlined">add</span>
+                    </div>
                     <p>$29.99</p>
                 </div>
-    
+
                 <div class="cart-card">
                     <div class="cart-icon">placeholder</div>
-                    <p>Chicken Burger</p>
                     <span class="material-symbols-outlined">close</span>
-                    <span class="material-symbols-outlined">add</span>2<span class="material-symbols-outlined">remove</span>
+                    <p>Chicken Burger</p>
+                    <div class="cart-amount">
+                        <span class="material-symbols-outlined">remove</span>
+                        2
+                        <span class="material-symbols-outlined">add</span>
+                    </div>
                     <p>$29.99</p>
                 </div>
             </div>
     
-            <button>Add Coupons<span class="material-symbols-outlined">
-                arrow_right_alt
-                </span></button>
+            <button class="coupon-button">
+                Add Coupons
+                <span class="material-symbols-outlined">arrow_right_alt</span>
+            </button>
     
-            <div class="cart-total">
-                <p>29.99</p>
-                <p>5.99</p>
-                <p>35.99</p>
-            </div>
+            <section class="cart-total">
+                <div>
+                    <p>Item Total</p>
+                    <p>Delivery Charge</p>
+                    <p>Tax</p>
+                    <p>Total</p>
+                </div>
+                <div>
+                    <p>$29.99</p>
+                    <p>$5.99</p>
+                    <p>$2.99</p>
+                    <p>$39.99</p>
+                </div>
+            </section>
     
-            <button>Procced To Payment Method</button>
+            <button class="procced-button">Procced To Payment Method</button>
+            <a href="rate.html">procced</a>
         </main>
     </div>
 </body>

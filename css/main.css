@@ -89,6 +89,7 @@ header div {
 }
 
 /* ------------------------------------------------------- */
+
 .cards1 {
     display: flex;
     flex-direction: row;
@@ -156,4 +157,100 @@ header div {
     display: flex;
     flex-direction: row;
     justify-content: start;
+}
+
+/* CART------------------------------------------------------- */
+
+.back-button {
+    display: flex;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.more-button {
+    display: flex;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cart-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------------------------------------------- */
+
+.cart-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.cart-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid lightgray 1px;
+}
+
+.cart-amount span {
+    color: #C8161D;
+    padding: 5px 10px;
+}
+
+/* ------------------------------------------------------- */
+
+.coupon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------------------- */
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------------- */
+
+.procced-button {
+    background-color: #C8161D;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* RATE------------------------------------------------------- */
+
+.redbackground {
+    background-color: #C8161D;
 }
