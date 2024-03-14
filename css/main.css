@@ -262,6 +262,11 @@ header div {
     font-weight: 600;
 }
 
+.bold2 {
+    color: black;
+    font-weight: 600;
+}
+
 /* CART------------------------------------------------------- */
 
 .back-button {
@@ -528,24 +533,44 @@ header div {
         font-size: 2.5rem;
     }
 
+    .page-nav {
+        margin-bottom: 3%;
+    }
+
+    .cards1 {
+        justify-content: space-evenly;
+    }
+
     .card1 {
         width: 200px;
         height: auto;
     }
 
-    .card3-list {
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        align-items: center;
+    .popular {
+        margin: 2% 0%;
     }
+
 }
 
 @media (min-width:831px) {
     .cart-list {
         display: flex;
         flex-direction: row;
-        width: auto;
         justify-content: space-evenly;
+    }
+
+    .card3-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card3-bottom {
+        justify-content: center;
+    }
+
+    .card3-bottom img {
+        padding: 0px 45px;
     }
 }
