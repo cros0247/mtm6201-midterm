@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Font -->
+    <!-- Font - (Poppins) From Google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Icons From Google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
@@ -18,9 +18,14 @@
 
     <title>Account</title>
 </head>
+
+<!-- Body is given specific class to change the pages whole background color -->
 <body class="redbackground">
+
+    <!-- Need to set a container/wrapper for all the content to stay within, giving margin on sides to match index/home page  -->
     <div class="container">
 
+        <!-- Header containing a button on each side and the page header in the middle, spaced evenly -->
         <header role="banner" class="rate-header">
             <div role="button" class="back-button" aria-label="Back button">
                 <a href="index.html">
@@ -33,10 +38,18 @@
             </div>
         </header>
 
+        <!-- Main content consists of 2 sections, "rate food" and "rate delivery". Each section will be made into a card and given display: flex -->
         <main role="main" class="card3-list">
 
+            <!-- The Card is split into 2 parts using divs, to allow the responsivness and the flex to seperate them vertically -->
+            <!------ Card 1 ------>
             <div role="complementary" class="card3">
+
+                <!-- Card part 1 -->
                 <p class="card3-top">How was your food?</p>
+
+                <!-- Card part 2 -->
+                <!-- Card part 2 is further given display flex to change the bottom of the card's content direction into a flex row  -->
                 <div class="card3-bottom">
                     <span role="option" aria-label="Thumbs Down Rating" class="material-symbols-outlined">thumb_down</span>
                     <img src="images/rectangle11.png" alt="Burger">
@@ -44,8 +57,13 @@
                 </div>
             </div>
 
+            <!------ Card 2 ------>
             <div role="complementary" class="card3">
+
+                <!-- Card part 1 -->
                 <p class="card3-top">How was your delivery?</p>
+
+                <!-- Card part 2 -->
                 <div class="card3-bottom">
                     <span role="option" aria-label="Thumbs Down Rating" class="material-symbols-outlined">thumb_down</span>
                     <img src="images/ellipse3.png" alt="Man">

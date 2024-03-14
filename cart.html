@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
 
-    <!-- Font -->
+    <!-- Font - (Poppins) From Google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Icons From Google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
@@ -20,7 +19,10 @@
     <title>Cart</title>
 </head>
 <body>
+    <!-- Need to set a container/wrapper for all the content to stay within, giving margin on sides to match index/home page  -->
     <div class="container">
+
+        <!-- Header containing a button on each side and the page header in the middle, spaced evenly -->
         <header role="banner" class="cart-header">
             <div role="button" class="back-button" aria-label="back buttone">
                 <a href="index.html">
@@ -33,15 +35,23 @@
             </div>
         </header>
 
+        <!-- Main content has 4 different sections: 1.The Cart Items (individual items created as cards), 2.Add Coupon Button, 3.Cart Pricing, 4.Procced with payment button -->
         <main role="main">
-            <div role="complementary" class="cart-list">   
 
+            <!-- Cart Items List Section -->
+            <div role="complementary" class="cart-list">   
+                
+                <!-- The Card is split into 3 individual parts using divs, to allow the responsivness and the flex movement to seperate them in a row -->
+                <!------ Cart Item 1 ------>
                 <div role="contentinfo" class="cart-card">
-                    <!-- <img class="cart-icon" src="images/rectangle11.png" alt="Burger"> -->
+
+                    <!-- Card part 1 -->
                     <picture>
-                        <source srcset="images/rectangle11-80_x_80.png, images/rectangle11-240_x_240.png 2x" media="(min-width:500px)" alt="Burger">
+                        <source srcset="images/rectangle11-80_x_80.png, images/rectangle11-240_x_240.png 2x" media="(min-width:500px)">
                         <img src="images/rectangle11-80_x_80.png" alt="Burger">
                     </picture>
+
+                    <!-- Card part 2 -->
                     <div class="cart-side">
                         <p class="bold">Chipotle Chicken</p>
                         <div class="cart-amount">
@@ -50,18 +60,24 @@
                             <span class="material-symbols-outlined">add</span>
                         </div>
                     </div>
+
+                    <!-- Card part 3 -->
                     <div class="cart-side">
                         <span class="material-symbols-outlined">close</span>
                         <p class="bold">$29.99</p>
                     </div>
                 </div>
 
+                <!------ Cart Item 2 ------>
                 <div role="contentinfo" class="cart-card">
-                    <!-- <img class="cart-icon" src="images/rectangle14.png" alt="Burger"> -->
+
+                    <!-- Card part 1 -->
                     <picture>
-                        <source srcset="images/rectangle14.png, images/rectangle14-240_x_240.png 2x" media="(min-width:500px)" alt="Burger">
+                        <source srcset="images/rectangle14.png, images/rectangle14-240_x_240.png 2x" media="(min-width:500px)">
                         <img src="images/rectangle14.png" alt="Burger">
                     </picture>
+
+                    <!-- Card part 2 -->
                     <div class="cart-side">
                         <p class="bold">Chicken Burger</p>
                         <div class="cart-amount">
@@ -70,25 +86,33 @@
                             <span class="material-symbols-outlined">add</span>
                         </div>
                     </div>
+
+                    <!-- Card part 3 -->
                     <div class="cart-side">
                         <span class="material-symbols-outlined">close</span>
                         <p class="bold">$29.99</p>
                     </div>
                 </div>
             </div>
-    
+
+            <!-- Add coupond button Section -->
             <button role="button" aria-label="Button to add a coupon code" class="coupon-button">
                 Add Coupons
                 <span class="material-symbols-outlined">arrow_right_alt</span>
             </button>
     
+            <!-- Cart items total Section -->
             <section role="complementary" class="cart-total">
+
+                <!-- Cart total split into 2 divs to allow responsive seperation using flex properties-->
+                <!-- Cart total left side -->
                 <div>
                     <p>Item Total</p>
                     <p>Delivery Charge</p>
                     <p>Tax</p>
                     <p class="bold">Total</p>
                 </div>
+                <!-- Cart total right side -->
                 <div>
                     <p>$59.99</p>
                     <p>$5.99</p>
@@ -97,6 +121,7 @@
                 </div>
             </section>
     
+            <!-- Procced with payment method button Section -->
             <button role="button" aria-label="Button to procced with purchase of cart items" type="submit" onclick="alert ('You have purchased your cart')" class="procced-button"><a href="rate.html">Procces to payment method</a></button>
             
         </main>

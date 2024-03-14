@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font -->
+    <!-- Font - (Poppins) From Google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Icons From Google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
@@ -19,8 +19,10 @@
     <title>Food Delivery App/Website</title>
 </head>
 <body>
+    <!-- Need to set a container/wrapper for all the content to stay within, giving margin on sides  -->
     <div class="container">
 
+        <!-- Header containing 3 items that are spaced in a row along the top -->
         <header role="banner">
             <div class="burger-menu">
                 <span class="material-symbols-outlined">menu</span>
@@ -36,7 +38,10 @@
             </div>
         </header>
     
+        <!-- Main content under the header section -->
         <main role="main" class="main">
+
+            <!-- Heading of page, with subheading and search bar -->
             <nav class="page-nav">
                 <h1 role="heading" aria-level="1">Hey!</h1>
                 <h3 role="heading" aria-level="3">Let's get your order</h3>
@@ -46,43 +51,45 @@
                 </div>
             </nav>
     
+            <!-- Food options set as individual cards with an image -->
             <section role="complementary" class="cards1">
+
+                <!-- The 3 Food Cards -->
+                <!-------- Card 1 -------->
                 <div role="option" class="card1">
-                    <!-- <img class="card1-icon"  src="images/group2.png" alt="burger"> -->
                     <picture>
-                        <source srcset="images/group2.png, images/group2-200_x_240.png 2x" media="(min-width:500px)" alt="Burger">
+                        <source srcset="images/group2.png, images/group2-200_x_240.png 2x" media="(min-width:500px)">
                         <img class="card1-icon" src="images/group2.png" alt="Burger">
                     </picture> 
-
                     <p class="bold">Burgers</p>
                     <span class="material-symbols-outlined">chevron_right</span>
                 </div>
     
+                <!-------- Card 2 -------->
                 <div role="option" class="card1">
-
-                    <!-- <img class="card1-icon" src="images/group2(1).png" alt="Pizza"> -->
                     <picture>
-                        <source srcset="images/group2(1).png, images/group2(1)-200_x_240.png 2x" media="(min-width:500px)" alt="Pizza">
+                        <source srcset="images/group2(1).png, images/group2(1)-200_x_240.png 2x" media="(min-width:500px)">
                         <img class="card1-icon" src="images/group2(1).png" alt="Pizza">
                     </picture>
-
                     <p class="bold">Pizza</p>
                     <span class="material-symbols-outlined">chevron_right</span>
                 </div>
     
+                <!-------- Card 3 -------->
                 <div role="option" class="card1">
-                    <!-- <img class="card1-icon" src="images/group2(2).png" alt="Cake"> -->
                     <picture>
-                        <source srcset="images/group2(2).png, images/group2(2)-200_x_240.png 2x" media="(min-width:500px)" alt="Cake">
+                        <source srcset="images/group2(2).png, images/group2(2)-200_x_240.png 2x" media="(min-width:500px)">
                         <img class="card1-icon" src="images/group2(2).png" alt="Cake">
                     </picture>
-
                     <p class="bold">Cakes</p>
                     <span class="material-symbols-outlined">chevron_right</span>
                 </div>
             </section>
             
+            <!-- Section showing "popular food items", A Secondary Page Heading with a card under, to show the popular item with info -->
             <section role="complementary">
+
+                <!-- Secondary Header of page for the "Popular" section, with a "view all" option at the end of heading -->
                 <div class="popular">
                     <h2 role="heading" aria-level="2">Popular</h2>
                     <div class="viewall">
@@ -90,11 +97,13 @@
                         <span class="material-symbols-outlined">keyboard_arrow_right</span>
                     </div>
                 </div>
-                
+
+                <!-- Card of a Popular food item, under the Secondary header -->
                 <div role="option" class="card2">
                     <div class="redbox">
                         <img class="card2-icon" src="images/rectangle11.png" alt="Large Burger">
                     </div>
+                    <!-- Bottom of the card is set into a div to enable "display: flex;" to create a responsive space between -->
                     <div class="card2-bottom">
                         <div>
                             <p class="bold2">Chipotle Cheesy Chicken</p>
@@ -105,12 +114,15 @@
                         </div>
                     </div>
                 </div>
-    
+
             </section>  
         </main>
     </div>
 
+    <!-- The App navigation menu that is fixed at the bottom of the screen, replacing/taking place of the footer, this is placed outide the "container/wrapper" to prevent the set margin from affecting it -->
     <nav role="navigation" class="app-nav">
+
+        <!------ Option 1 - Home Button ------>
         <div aria-label="Tab to the home page">
             <a href="cart.html">
                 <span class="material-symbols-outlined">home</span>
@@ -118,6 +130,7 @@
             <a href="cart.html">Home</a>
         </div>
 
+        <!------ Option 2 - Favorite Button ------>
         <div aria-label="Tab to your favorites page">
             <a href="cart.html">
                 <span class="material-symbols-outlined">favorite</span>
@@ -125,6 +138,7 @@
             <a href="cart.html">Favorites</a>
         </div>
 
+        <!------ Option 3 - Person Button ------>
         <div aria-label="tab to your account page">
             <a href="cart.html">
                 <span class="material-symbols-outlined">person</span>
@@ -132,6 +146,7 @@
             <a href="cart.html">Account</a>
         </div>
 
+        <!------ Option 4 - More Options Button ------>
         <div aria-label="tab to the more options page">
             <a href="cart.html">
                 <span class="material-symbols-outlined">more_horiz</span>
@@ -139,6 +154,7 @@
             <a href="cart.html">More</a>
         </div>
 
+        <!------ Option 5 - Shopping Basket Button------>
         <div aria-label="tab to your cart">
             <a href="cart.html">
                 <span class="material-symbols-outlined">shopping_basket</span>

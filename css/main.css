@@ -1,3 +1,9 @@
+
+/* ----------------------------------------------------------------------------------- */
+/* --------------- CSS Settings and properties to be used on all pages --------------- */
+/* ----------------------------------------------------------------------------------- */
+
+/* Font is linked in as a Google Font */
 body {
     font-family: "Poppins";
     margin: 0%;
@@ -35,17 +41,32 @@ h4 {
     font-weight: 400;
 }
 
+/* Custom Bold States */
+.bold {
+    font-weight: 600;
+}
+
+.bold2 {
+    color: black;
+    font-weight: 600;
+}
+
+/* To make space at the bottom of each page for the "app-nav", if its desired to have the "app-nav" on each page*/
 main {
     margin-bottom: 100px;
 }
 
+/* Container used for all pages to create space on sides and prevent overflow */
 .container {
     width: auto;
     margin: 0% 5%;
 }
 
-/* ------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+/* ------------------------------- Index/Home Page CSS ------------------------------- */
+/* ----------------------------------------------------------------------------------- */
 
+/* Header section of Home page ------------------------------------------------------- */
 header {
     display: flex;
     flex-direction: row;
@@ -68,8 +89,9 @@ header div {
     justify-content: center;
 }
 
+/* The Icon for the location is given an animation of a slow infinit bounce */
 @keyframes move {
-	0% {transform: translateY(0,0);}
+	0% {transform: translateY(0);}
 	100% {transform: translateY(-10px);}
 }
 
@@ -86,7 +108,7 @@ header div {
     justify-content: end;
 }
 
-/* ------------------------------------------------------- */
+/* App Navigation menu fxed at bottom of screen ------------------------------------------------------- */
 
 .app-nav {
     display: flex;
@@ -96,7 +118,6 @@ header div {
     overflow: hidden;
     bottom: 0;
    
-    color: gray;
     height: 80px;
     width: 100%;
     background-color: white;
@@ -113,19 +134,11 @@ header div {
     height: auto;
 }
 
-.app-nav div:nth-child(1) {
-    color: #C8161D;
-}
-
 .app-nav a {
     color: gray;
 }
-
-.app-nav p {
-    margin: 0%;
-}
     
-/* ------------------------------------------------------- */
+/* Home Page Navigation / Heading, Directly under the Header ------------------------------------------------------- */
 
 .page-nav {
     width: 100%;
@@ -152,7 +165,7 @@ header div {
     border: none;
 }
 
-/* ------------------------------------------------------- */
+/* Food Option Cards Section ------------------------------------------------------- */
 
 .cards1 {
     display: flex;
@@ -173,9 +186,22 @@ header div {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.card1 span {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+
+/* Hover state changes of the Card */
 .card1:hover {
     background-color: #C8161D;
     color: white;
+}
+
+.card1:hover span {
+    background-color: white;
+    border-radius: 50%;
+    color: #C8161D;
 }
 
 /* .card1:nth-child(1) {
@@ -187,24 +213,7 @@ header div {
     color: #C8161D;
 } */
 
-.card1 span {
-    background-color: black;
-    border-radius: 50%;
-    color: white;
-}
-
-.card1:hover span {
-    background-color: white;
-    border-radius: 50%;
-    color: #C8161D;
-}
-
-/* .card1-icon {
-    width: 50px;
-    height: 50px;
-} */
-
-/* ------------------------------------------------------- */
+/* The Popular Heading Section of the Page ------------------------------------------------------- */
 
 .popular {
     display: flex;
@@ -222,7 +231,7 @@ header div {
     font-weight: 600;
 }
 
-/* ------------------------------------------------------- */
+/* The Card of the Popular Section ------------------------------------------------------- */
 
 .card2 {
     display: flex;
@@ -258,17 +267,11 @@ header div {
     margin-bottom: 80px;
 }
 
-.bold {
-    font-weight: 600;
-}
+/* ----------------------------------------------------------------------------------- */
+/* ---------------------------------- Cart Page CSS ---------------------------------- */
+/* ----------------------------------------------------------------------------------- */
 
-.bold2 {
-    color: black;
-    font-weight: 600;
-}
-
-/* CART------------------------------------------------------- */
-
+/* Header of the Cart Page ------------------------------------------------------- */
 .back-button {
     display: flex;
     justify-content: center;
@@ -305,7 +308,7 @@ header div {
     margin: 5% 0%;
 }
 
-/* ------------------------------------------------------- */
+/* Item Cards of Cart Page ------------------------------------------------------- */
 
 .cart-card {
     display: flex;
@@ -321,6 +324,7 @@ header div {
     margin-bottom: 25px;
 }
 
+/* Cart-side is the class for the items next to the Img, used for seperation for flex properties */
 .cart-side {
     display: flex;
     justify-content: space-evenly;
@@ -334,11 +338,6 @@ header div {
     justify-content: space-between;
     align-items: end;
     flex-direction: column;
-}
-
-.cart-icon {
-    width: 80px;
-    height: 70px;
 }
 
 .cart-amount {
@@ -363,7 +362,7 @@ header div {
     padding-top: 10px;
 }
 
-/* ------------------------------------------------------- */
+/* Coupon Button ------------------------------------------------------- */
 
 .coupon-button {
     display: flex;
@@ -380,14 +379,14 @@ header div {
     font-size: 1.1rem;
 }
 
-/* ------------------------------------------------------- */
+/* Cart Total Section ------------------------------------------------------- */
 
 .cart-total {
     display: flex;
     justify-content: space-between;
 }
 
-/* ------------------------------------------------------- */
+/* Procced Button ------------------------------------------------------- */
 
 .procced-button {
     animation: bounce 2s ease infinite;
@@ -399,6 +398,7 @@ header div {
     border: none;
     border-radius: 10px;
   }
+
   @keyframes bounce {
       70% { transform:translateY(0%); }
       80% { transform:translateY(-15%); }
@@ -415,18 +415,16 @@ header div {
     font-size: 1.1rem;
 }
 
-/* RATE------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+/* ---------------------------------- Rate Page CSS ---------------------------------- */
+/* ----------------------------------------------------------------------------------- */
 
+/* Class given to make page backgrounf red  */
 .redbackground {
     background-color: #C8161D;
 }
 
-.rate-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
+/* Rate page Header, shares the same buttons as Cart page------------------------------------------------------- */
 .rate-header {
     display: flex;
     align-items: center;
@@ -437,7 +435,7 @@ header div {
     background-color: white;
 }
 
-/* ------------------------------------------------------- */
+/* Cards on Rate page ------------------------------------------------------- */
 
 .card3-list {
     display: flex;
@@ -453,6 +451,7 @@ header div {
     margin-bottom: 40px;
 }
 
+/* Animation given to the thumbs up and down icons */
 @keyframes thumb {
 	0% {transform: translateY(-10px);}
 	100% {transform: translateY(10px);}
@@ -469,8 +468,9 @@ header div {
     border-radius: 50%;
     padding: 10px;
 }
-/* ------------------------------------------------------- */
 
+/* Card is broken into 2 parts, Top and Bottom */
+/* Top of Card */
 .card3-top {
     display: flex;
     justify-content: center;
@@ -482,12 +482,7 @@ header div {
     opacity: 75%;
 }
 
-.card3-top-last {
-    color: white;
-}
-
-/* ------------------------------------------------------- */
-
+/* Bottom of Card */
 .card3-bottom {
     display: flex;
     flex-direction: row;
@@ -509,8 +504,11 @@ header div {
     margin: 0px 15px;
 }
 
-/* MEDIA QUERIES------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------- */
+/* ---------------------------------- Media Queries ---------------------------------- */
+/* ----------------------------------------------------------------------------------- */
 
+/* Changes when width over 500px */
 @media (min-width: 500px) {
     p {
         font-size: 20px;
@@ -552,6 +550,7 @@ header div {
 
 }
 
+/* Changes when width over 831px */
 @media (min-width:831px) {
     .cart-list {
         display: flex;
