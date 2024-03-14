@@ -69,12 +69,8 @@ header div {
 }
 
 @keyframes move {
-	0%{
-		transform: translateY(0,0);
-	}
-	100%{
-		transform: translateY(-10px);
-	}
+	0% {transform: translateY(0,0);}
+	100% {transform: translateY(-10px);}
 }
 
 .location span {
@@ -202,6 +198,7 @@ header div {
     border-radius: 50%;
     color: #C8161D;
 }
+
 /* ------------------------------------------------------- */
 
 .popular {
@@ -254,10 +251,6 @@ header div {
 
 .card2-icon {
     margin-bottom: 20%;
-}
-
-.card2-icon:hover {
-    transform: scale(110%, 110%);
 }
 
 .bold {
@@ -384,13 +377,24 @@ header div {
 /* ------------------------------------------------------- */
 
 .procced-button {
+    animation: bounce 2s ease infinite;
+
     background-color: #C8161D;
     color: white;
     width: 100%;
     padding: 20px;
     border: none;
     border-radius: 10px;
-}
+  }
+  @keyframes bounce {
+      70% { transform:translateY(0%); }
+      80% { transform:translateY(-15%); }
+      90% { transform:translateY(0%); }
+      95% { transform:translateY(-7%); }
+      97% { transform:translateY(0%); }
+      99% { transform:translateY(-3%); }
+      100% { transform:translateY(0); }
+  }
 
 .procced-button a {
     color: white;
@@ -436,12 +440,22 @@ header div {
     margin-bottom: 40px;
 }
 
-.card3 span{
+@keyframes thumb {
+	0% {transform: translateY(-10px);}
+	100% {transform: translateY(10px);}
+}
+
+.card3 span {
+	animation-name: thumb;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
     background-color: white;
     border-radius: 50%;
     padding: 10px;
 }
-
 /* ------------------------------------------------------- */
 
 .card3-top {

@@ -20,7 +20,8 @@
 </head>
 <body>
     <div class="container">
-        <header>
+
+        <header role="banner">
             <div class="burger-menu">
                 <span class="material-symbols-outlined">menu</span>
             </div>
@@ -35,47 +36,46 @@
             </div>
         </header>
     
-        <main class="main">
-
+        <main role="main" class="main">
             <nav class="page-nav">
-                <h1>Hey!</h1>
-                <h3>Let's get your order</h3>
+                <h1 role="heading" aria-level="1">Hey!</h1>
+                <h3 role="heading" aria-level="3">Let's get your order</h3>
                 <div>
                     <span class="material-symbols-outlined">search</span>
-                    <input type="text" name="searchbar" id="seacrbar" placeholder="Search Our Delicious Burgers">
+                    <input role="search" type="search" name="searchbar" id="seacrbar" placeholder="Search Our Delicious Burgers">
                 </div>
             </nav>
     
-            <section class="cards1">
-                <div class="card1">
+            <section role="complementary" class="cards1">
+                <div role="option" class="card1">
                     <img class="card1-icon"  src="/images/group2.png" alt="burger">
-                    <p class="card1-food">Burgers</p>
+                    <p class="bold">Burgers</p>
                     <span class="material-symbols-outlined">chevron_right</span>
                 </div>
     
-                <div class="card1">
+                <div role="option" class="card1">
                     <img class="card1-icon" src="/images/group2(1).png" alt="Pizza">
-                    <p class="card1-food">Pizza</p>
+                    <p class="bold">Pizza</p>
                     <span class="material-symbols-outlined">chevron_right</span>
                 </div>
     
-                <div class="card1">
+                <div role="option" class="card1">
                     <img class="card1-icon" src="/images/group2(2).png" alt="Cake">
-                    <p class="card1-food">Cakes</p>
+                    <p class="bold">Cakes</p>
                     <span class="material-symbols-outlined">chevron_right</span>
                 </div>
             </section>
             
-            <section>
+            <section role="complementary">
                 <div class="popular">
-                    <h2>Popular</h2>
+                    <h2 role="heading" aria-level="2">Popular</h2>
                     <div class="viewall">
                         <p>View all</p>
                         <span class="material-symbols-outlined">keyboard_arrow_right</span>
                     </div>
                 </div>
                 
-                <div class="card2">
+                <div role="option" class="card2">
                     <div class="redbox">
                         <img class="card2-icon" src="/images/rectangle11.png" alt="Large Burger">
                     </div>
@@ -94,36 +94,36 @@
         </main>
     </div>
 
-    <nav class="app-nav">
-        <div>
+    <nav role="navigation" class="app-nav">
+        <div aria-label="Tab to the home page">
             <a href="cart.html">
                 <span class="material-symbols-outlined">home</span>
             </a> 
             <a href="cart.html">Home</a>
         </div>
 
-        <div>
+        <div aria-label="Tab to your favorites page">
             <a href="cart.html">
                 <span class="material-symbols-outlined">favorite</span>
             </a>
             <a href="cart.html">Favorites</a>
         </div>
 
-        <div>
+        <div aria-label="tab to your account page">
             <a href="cart.html">
                 <span class="material-symbols-outlined">person</span>
             </a>
             <a href="cart.html">Account</a>
         </div>
 
-        <div>
+        <div aria-label="tab to the more options page">
             <a href="cart.html">
                 <span class="material-symbols-outlined">more_horiz</span>
             </a>
             <a href="cart.html">More</a>
         </div>
 
-        <div>
+        <div aria-label="tab to your cart">
             <a href="cart.html">
                 <span class="material-symbols-outlined">shopping_basket</span>
             </a>

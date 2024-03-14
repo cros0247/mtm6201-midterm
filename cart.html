@@ -21,22 +21,22 @@
 </head>
 <body>
     <div class="container">
-        <header class="cart-header">
-            <div class="back-button">
+        <header role="banner" class="cart-header">
+            <div role="button" class="back-button" aria-label="back buttone">
                 <a href="index.html">
                     <span class="material-symbols-outlined">arrow_back_ios_new</span>
                 </a>
             </div>
-            <h2>Cart</h2>
-            <div class="more-button">
+            <h2 role="heading" aria-level="1">Cart</h2>
+            <div role="button" class="more-button" aria-label="More options button">
                 <span class="material-symbols-outlined">more_vert</span>
             </div>
         </header>
 
-        <main>
-            <div class="cart-list">   
+        <main role="main">
+            <div role="complementary" class="cart-list">   
 
-                <div class="cart-card">
+                <div role="contentinfo" class="cart-card">
                     <img class="cart-icon" src="/images/rectangle11.png" alt="Burger">
                     <div class="cart-side">
                         <p class="bold">Chipotle Chicken</p>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="cart-card">
+                <div role="contentinfo" class="cart-card">
                     <img class="cart-icon" src="/images/rectangle14.png" alt="Burger">
                     <div class="cart-side">
                         <p class="bold">Chicken Burger</p>
@@ -69,12 +69,12 @@
                 </div>
             </div>
     
-            <button class="coupon-button">
+            <button role="button" aria-label="Button to add a coupon code" class="coupon-button">
                 Add Coupons
                 <span class="material-symbols-outlined">arrow_right_alt</span>
             </button>
     
-            <section class="cart-total">
+            <section role="complementary" class="cart-total">
                 <div>
                     <p>Item Total</p>
                     <p>Delivery Charge</p>
@@ -89,7 +89,7 @@
                 </div>
             </section>
     
-            <button class="procced-button"><a href="rate.html">Procces to payment method</a></button>
+            <button role="button" aria-label="Button to procced with purchase of cart items" type="submit" onclick="alert ('You have purchased your cart')" class="procced-button"><a href="rate.html">Procces to payment method</a></button>
             
         </main>
     </div>
